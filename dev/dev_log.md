@@ -22,7 +22,8 @@
 - Implemented centralized response format
 - Created custom error class (AppError)
 - Added global error handling middleware
-
+- Installed Joi for schema-based validation
+- created reusable validation schema
 ### Why I did it
 - To standardize API responses
 - To centralize error handling
@@ -32,3 +33,4 @@
 - Using layered architecture (Controller → Service → Repository)
 - enforcing consistnt API response format across application
 - centralizing error handling to avoid duplicate logic 
+- using middleware based validation for reusability
