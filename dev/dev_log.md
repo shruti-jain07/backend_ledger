@@ -24,13 +24,23 @@
 - Added global error handling middleware
 - Installed Joi for schema-based validation
 - created reusable validation schema
+- added support for body,params, and query validation
+- Integrated Winston for Structured Logging
+- Created centralized logger utility
+- Implemented request logging middleware
+- Logged API request details(method,url,status,duration)
 ### Why I did it
+## Error handling
 - To standardize API responses
 - To centralize error handling
 - To keep controllers clean and maintainable
+## Validation
+- to Keep validation logic completely separate from controllers
 
 ### Decisions
 - Using layered architecture (Controller → Service → Repository)
 - enforcing consistnt API response format across application
 - centralizing error handling to avoid duplicate logic 
 - using middleware based validation for reusability
+- Using structured JSON logs for better debugging and scalability
+- Centralizing all logs using Winston
