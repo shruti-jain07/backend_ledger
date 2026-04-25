@@ -1,4 +1,4 @@
-## Day 1 - Project Initialization
+## Day 1- 24 April 2026 - Project Initialization
 
 ### Work Done
 - Initialized Node.js project using npm init
@@ -12,5 +12,23 @@
 ### Decisions
 - Using environment variables (.env) to store sensitive data like DB URI
 - Keeping DB connection logic inside src/config/db.js for separation of concerns
+- Using feature-based branching strategy
+- Each module will be developed in separate branches and merged into main after completion
 
+## Day 2 -25 april 2026- Folder Structure
 
+### What I did
+- Set up professional folder structure
+- Implemented centralized response format
+- Created custom error class (AppError)
+- Added global error handling middleware
+
+### Why I did it
+- To standardize API responses
+- To centralize error handling
+- To keep controllers clean and maintainable
+
+### Decisions
+- Using layered architecture (Controller → Service → Repository)
+- enforcing consistnt API response format across application
+- centralizing error handling to avoid duplicate logic 
