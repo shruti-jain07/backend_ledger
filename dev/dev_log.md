@@ -15,7 +15,7 @@
 - Using feature-based branching strategy
 - Each module will be developed in separate branches and merged into main after completion
 
-## Day 2 -25 april 2026- Folder Structure
+## Day 2 -25 april 2026- base Structure
 
 ### What I did
 - Set up professional folder structure
@@ -44,3 +44,30 @@
 - using middleware based validation for reusability
 - Using structured JSON logs for better debugging and scalability
 - Centralizing all logs using Winston
+## Day 3 -27 april 2026- git synchronization
+### Issue faced & how i resolved
+- merge conflict happened
+- in order to resolve this used git stash
+- because of some mismatch code got lost
+- restored everything from main
+- then applied some changes
+- successfully resolved everything and code got cleanly merged into main
+## What i did 
+- Centralized error-handling & response format done
+- validation done
+- logging done
+## Day-4 28April 2026 
+## Postman Setup
+### What I did
+- Created environment with base_url
+- Created API collection
+- Added initial health check endpoint
+- Structured collection for future modules
+
+### Why I did it
+- To standardize API testing
+- To avoid hardcoded URLs
+- To maintain reusable API structure
+
+### Outcome
+- Postman is ready for structured backend testing
