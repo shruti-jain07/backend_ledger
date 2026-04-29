@@ -1,3 +1,5 @@
 {"level":"info","message":{"duration":"7ms","method":"GET","status":200,"url":"/health"},"timestamp":"2026-04-28T11:12:27.007Z"}
 {"level":"info","message":{"duration":"6ms","method":"GET","status":200,"url":"/health"},"timestamp":"2026-04-28T11:15:21.786Z"}
 {"level":"info","message":{"duration":"9ms","method":"GET","status":200,"url":"/health"},"timestamp":"2026-04-28T11:18:03.242Z"}
+{"host":"ac-svvaol3-shard-00-00.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-04-29T05:10:01.121Z"}
+{"host":"ac-svvaol3-shard-00-02.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-04-29T05:10:28.332Z"}
