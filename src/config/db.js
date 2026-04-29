@@ -3,10 +3,16 @@ const mongoose=require("mongoose")
 const connectDB=async()=>{
     try{
         const conn=await mongoose.connect(process.env.MONGO_URI)
-        console.log(`MongoDB Connected:${conn.connection.host}`)
+        logger.info({
+            message: "MongoDB connected",
+            host: conn.connection.host,
+        });
     }
     catch(error){
-        console.error("Database connection failed:",error.message)
+        logger.error({
+            message: "Database connection failed",
+            error: error.message,
+        });
         process.exit(1)
     }
 }
