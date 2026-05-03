@@ -5,11 +5,14 @@ const createUser=(data)=>{
 const findUserByEmail=(email)=>{
     return User.findOne({email}).select("+password")
 }
+const findUserById=(id)=>{
+    return User.findById(id)
+}
 const updatePassword=async(userId,newPassword)=>{
     const user=await User.findById(userId)
     user.password=newPassword
     return user.save()
 }
 module.exports={
-    createUser,findUserByEmail,updatePassword
+    createUser,findUserById,findUserByEmail,updatePassword
 }
