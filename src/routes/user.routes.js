@@ -1,8 +1,8 @@
 const express = require("express")
 const router = express.Router()
-const authMiddleware = require("../middlewares/auth.middleware")
+const { authMiddleware } = require("../middlewares/auth.middleware")
 
-router.get("/profile", authMiddleware, (req, res) => {
+router.get("/profile",authMiddleware, (req, res) => {
   res.json({
     success: true,
     message: "User profile fetched",

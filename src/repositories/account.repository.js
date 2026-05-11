@@ -5,4 +5,12 @@ const createAccount=(data)=>{
 const getAccountByUser=(userId)=>{
     return account.find({user:userId})
 }
-module.exports={createAccount,getAccountByUser}
+const findAccountById=(accountId)=>{
+    return account.findById(accountId)
+}
+const findAccountByUserId=(userId)=>{
+    return account.findOne({user:userId})
+}
+
+const findSystemUser=
+module.exports={createAccount,getAccountByUser,findAccountById,findAccountByUserId}
