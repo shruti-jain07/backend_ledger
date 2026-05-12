@@ -21,22 +21,6 @@ const accountRepository=require("../repositories/account.repository")
 const AppError=require("../utils/AppError")
 const ERROR_CODES=require("../constants/errorCodes")
 
-//calculate balance
-const calculateBalance=async(accountId)=>{
-   
-    const entries=await ledgerRepository.getLedgerEntriesByAccount(accountId)
-     
-    let balance=0
-    for(const entry of entries){
-        if(entry.type==="CREDIT"){
-            balance+=entry.amount
-        }
-        if(entry.type==="DEBIT"){
-            balance-=entry.amount
-        }
-    }
-    return balance
-}
 //transaction processor
 const processTransaction=async({
     fromAccount,toAccount,amount,idempotencyKey
@@ -120,10 +104,20 @@ const transfer=async(userId,{fromAccount,toAccount,amount,idempotencyKey})=>{
     //dupliate transaction
     const existingTransaction=await transactionRepository.findByIdempotencyKey(idempotencyKey)
     if(existingTransaction){
-        throw new AppError("Duplicate Transaction Request",409,ERROR_CODES.CONFLICT)
+        if(existingTransaction.status==="SUCCESS"){
+            throw new AppError("Transaction already processed",409,ERROR_CODES.CONFLICT)
+        }
+        
+        if(existingTransaction.status==="PENDING"){
+        throw new AppError("Transaction is still in progress",409,ERROR_CODES.CONFLICT)
+    }
+
+    if(existingTransaction.status==="FAILED"){
+        throw new AppError("Transaction failed. Please retry",409,ERROR_CODES.CONFLICT)
+    }
     }
     //balance calculation
-    const senderBalance=await calculateBalance(fromAccount)
+   const senderBalance=await senderAccount.getBalance()
     //checking for insufficient balance
     if(senderBalance<amount){
         throw new AppError("Insufficient Balance",400,ERROR_CODES.BAD_REQUEST)
@@ -173,10 +167,20 @@ const initialFundsTransfer=async(systemUserId,{
     //duplicate transaction validation
     const existingTransaction=await transactionRepository.findByIdempotencyKey(idempotencyKey)
     if(existingTransaction){
-        throw new AppError("Duplicate Transaction Request",409,ERROR_CODES.CONFLICT)
+        if(existingTransaction.status==="SUCCESS"){
+            throw new AppError("Transaction already processed",409,ERROR_CODES.CONFLICT)
+        }
+        
+        if(existingTransaction.status==="PENDING"){
+        throw new AppError("Transaction is still in progress",409,ERROR_CODES.CONFLICT)
+    }
+
+    if(existingTransaction.status==="FAILED"){
+        throw new AppError("Transaction failed. Please retry",409,ERROR_CODES.CONFLICT)
+    }
     }
     //system balance check
-    const senderBalance=await calculateBalance(senderAccount._id)
+    const senderBalance=await senderAccount.getBalance()
     
     if(senderBalance<amount){
         throw new AppError("Insufficient system balance",400,ERROR_CODES.BAD_REQUEST)

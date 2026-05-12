@@ -12,7 +12,7 @@ const createAccount=async(req,res,next)=>{
 const getAccounts=async(req,res,next)=>{
     try{
         const accounts=await accountService.getAccounts(req.user.id)
-        return successResponse(res,"ACcounts fetched",accounts)
+        return successResponse(res,"Accounts fetched",accounts)
     }catch(err){
         return next(err)
     }
