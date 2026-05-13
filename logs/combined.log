@@ -336,3 +336,85 @@
 {"level":"info","message":{"duration":"309ms","method":"POST","status":200,"url":"/api/auth/login"},"timestamp":"2026-05-12T05:16:16.918Z"}
 {"level":"info","message":{"duration":"117ms","method":"GET","status":200,"url":"/api/account"},"timestamp":"2026-05-12T05:16:27.235Z"}
 {"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-12T05:19:54.526Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:19:11.008Z"}
+{"level":"info","message":{"duration":"273ms","method":"POST","status":200,"url":"/api/auth/login"},"timestamp":"2026-05-13T05:19:12.049Z"}
+{"level":"info","message":{"duration":"748ms","method":"POST","status":200,"url":"/api/transactions/transfer"},"timestamp":"2026-05-13T05:19:34.326Z"}
+{"host":"ac-svvaol3-shard-00-02.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:25:56.358Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:26:05.737Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:26:14.115Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:26:33.588Z"}
+{"host":"ac-svvaol3-shard-00-02.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:26:38.352Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:27:23.518Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:27:25.692Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:27:28.062Z"}
+{"host":"ac-svvaol3-shard-00-02.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:27:30.888Z"}
+{"host":"ac-svvaol3-shard-00-00.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:27:48.679Z"}
+{"host":"ac-svvaol3-shard-00-00.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:27:53.958Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:27:59.045Z"}
+{"host":"ac-svvaol3-shard-00-00.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:28:02.699Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:28:13.215Z"}
+{"host":"ac-svvaol3-shard-00-00.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:28:19.127Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:28:21.591Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:28:24.736Z"}
+{"host":"ac-svvaol3-shard-00-02.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:28:31.808Z"}
+{"host":"ac-svvaol3-shard-00-00.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:28:35.894Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:28:38.679Z"}
+{"host":"ac-svvaol3-shard-00-02.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:28:47.947Z"}
+{"host":"ac-svvaol3-shard-00-02.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:28:56.345Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:29:34.598Z"}
+{"host":"ac-svvaol3-shard-00-02.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:29:42.866Z"}
+{"host":"ac-svvaol3-shard-00-02.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:29:46.059Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:29:54.808Z"}
+{"host":"ac-svvaol3-shard-00-00.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:29:57.769Z"}
+{"host":"ac-svvaol3-shard-00-00.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:30:00.818Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:30:08.137Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:30:20.147Z"}
+{"host":"ac-svvaol3-shard-00-00.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:30:23.459Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:30:27.500Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:30:34.166Z"}
+{"host":"ac-svvaol3-shard-00-02.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:30:38.890Z"}
+{"host":"ac-svvaol3-shard-00-00.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:30:47.262Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:31:05.119Z"}
+{"host":"ac-svvaol3-shard-00-00.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:31:16.415Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:31:18.376Z"}
+{"host":"ac-svvaol3-shard-00-00.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:31:21.882Z"}
+{"host":"ac-svvaol3-shard-00-02.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:31:26.529Z"}
+{"host":"ac-svvaol3-shard-00-02.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:31:30.275Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:31:38.424Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:31:41.476Z"}
+{"host":"ac-svvaol3-shard-00-02.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:31:45.026Z"}
+{"host":"ac-svvaol3-shard-00-02.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:31:55.725Z"}
+{"host":"ac-svvaol3-shard-00-00.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:32:11.730Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:32:27.417Z"}
+{"host":"ac-svvaol3-shard-00-00.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:32:29.755Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:32:41.421Z"}
+{"host":"ac-svvaol3-shard-00-02.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:33:29.139Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:33:41.371Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:35:30.957Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:35:34.043Z"}
+{"host":"ac-svvaol3-shard-00-02.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:35:36.363Z"}
+{"host":"ac-svvaol3-shard-00-00.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:35:48.437Z"}
+{"host":"ac-svvaol3-shard-00-00.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:36:19.183Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:36:22.822Z"}
+{"host":"ac-svvaol3-shard-00-00.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:36:25.385Z"}
+{"host":"ac-svvaol3-shard-00-00.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:36:32.663Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:36:35.123Z"}
+{"host":"ac-svvaol3-shard-00-02.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:36:37.296Z"}
+{"host":"ac-svvaol3-shard-00-01.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:37:06.570Z"}
+{"host":"ac-svvaol3-shard-00-02.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:37:11.453Z"}
+{"host":"ac-svvaol3-shard-00-02.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:37:19.717Z"}
+{"host":"ac-svvaol3-shard-00-00.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:37:24.777Z"}
+{"host":"ac-svvaol3-shard-00-00.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:37:28.133Z"}
+{"host":"ac-svvaol3-shard-00-02.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:37:30.787Z"}
+{"host":"ac-svvaol3-shard-00-02.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-13T05:38:03.151Z"}
+{"level":"info","message":{"duration":"160ms","method":"GET","status":200,"url":"/api/account"},"timestamp":"2026-05-13T05:41:53.996Z"}
+{"level":"info","message":{"duration":"186ms","method":"GET","status":200,"url":"/api/account/6a016cc570431c63312db1bd/balance"},"timestamp":"2026-05-13T05:43:09.969Z"}
+{"code":"FORBIDDEN","level":"error","message":"Unauthorized account access","method":"GET","path":"/api/account/6a01624e70431c63312db1b8/balance","stack":"Error: Unauthorized account access\n    at Object.getAccountBalance (D:\\backend_ledger\\src\\services\\account.service.js:22:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async getAccountBalance (D:\\backend_ledger\\src\\controllers\\account.controller.js:23:22)","timestamp":"2026-05-13T05:45:55.676Z"}
+{"level":"info","message":{"duration":"442ms","method":"GET","status":403,"url":"/api/account/6a01624e70431c63312db1b8/balance"},"timestamp":"2026-05-13T05:45:55.677Z"}
+{"code":"NOT_FOUND","level":"error","message":"Account not found","method":"GET","path":"/api/account/6a01624e70431c63312bd128/balance","stack":"Error: Account not found\n    at Object.getAccountBalance (D:\\backend_ledger\\src\\services\\account.service.js:18:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async getAccountBalance (D:\\backend_ledger\\src\\controllers\\account.controller.js:23:22)","timestamp":"2026-05-13T05:48:43.744Z"}
+{"level":"info","message":{"duration":"124ms","method":"GET","status":404,"url":"/api/account/6a01624e70431c63312bd128/balance"},"timestamp":"2026-05-13T05:48:43.745Z"}
+{"code":"CONFLICT","level":"error","message":"Transaction already processed","method":"POST","path":"/api/transactions/transfer","stack":"Error: Transaction already processed\n    at Object.transfer (D:\\backend_ledger\\src\\services\\transaction.service.js:108:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async transfer (D:\\backend_ledger\\src\\controllers\\transaction.controller.js:18:27)","timestamp":"2026-05-13T05:59:26.429Z"}
+{"level":"info","message":{"duration":"278ms","method":"POST","status":409,"url":"/api/transactions/transfer"},"timestamp":"2026-05-13T05:59:26.430Z"}
+{"code":"CONFLICT","level":"error","message":"Transaction already processed","method":"POST","path":"/api/transactions/transfer","stack":"Error: Transaction already processed\n    at Object.transfer (D:\\backend_ledger\\src\\services\\transaction.service.js:108:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async transfer (D:\\backend_ledger\\src\\controllers\\transaction.controller.js:18:27)","timestamp":"2026-05-13T06:01:10.284Z"}
+{"level":"info","message":{"duration":"289ms","method":"POST","status":409,"url":"/api/transactions/transfer"},"timestamp":"2026-05-13T06:01:10.285Z"}
+{"level":"info","message":{"duration":"633ms","method":"POST","status":200,"url":"/api/transactions/transfer"},"timestamp":"2026-05-13T06:01:29.895Z"}
