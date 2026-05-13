@@ -208,3 +208,14 @@ base_url=http://localhost:3000
 - Transaction status updates
 - Balance derivation checks
 - Session rollback checks
+
+### 12may-13may 
+# Balance API 
+### API Completed
+- POST /api/account/:accountId/balance
+## Feature
+- Added account balance API
+- Added ownership validation for balance access
+## Testing
+- Completed Postman testing for balance API
+- Tested unauthorized balance access validation

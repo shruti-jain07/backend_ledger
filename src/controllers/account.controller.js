@@ -17,6 +17,15 @@ const getAccounts=async(req,res,next)=>{
         return next(err)
     }
 }
+
+const getAccountBalance=async(req,res,next)=>{
+    try{
+        const result=await accountService.getAccountBalance(req.user.id,req.params.accountId)
+        return successResponse(res,"Balance Fetched Successfully",result)
+    }catch(err){
+        return next(err)
+    }
+}
 module.exports={
-    createAccount,getAccounts
+    createAccount,getAccounts,getAccountBalance
 }
