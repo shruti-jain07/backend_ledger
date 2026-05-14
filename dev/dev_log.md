@@ -221,13 +221,15 @@ base_url=http://localhost:3000
 - Tested unauthorized balance access validation
 
 ## 14 may 2026
-# Transaction History API Update
+# Transaction History API and JWT Logout System
 
 ## API 
+# Transaction history
 router.get("/history",authMiddleware,transactionController.getTransactionHistory)
-
+# Logout
+router.post("/logout",authMiddleware,authController.logout)
 ## Completed
-
+# Transaction history
 - Added transaction history API
 - Added paginated transaction fetching
 - Added latest-first transaction sorting
@@ -237,3 +239,13 @@ router.get("/history",authMiddleware,transactionController.getTransactionHistory
   - transaction history
   - pagination
   - unauthorized access
+# JWT blacklist token system
+- Added JWT token blacklist model
+- Added TTL index for automatic token cleanup
+- Added blacklist repository
+- Added cookie clearing on logout
+- Completed Postman testing for:
+  - login
+  - logout
+  - protected route access
+  - invalidated token rejection

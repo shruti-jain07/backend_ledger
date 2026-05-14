@@ -2,6 +2,7 @@ const jwt=require("jsonwebtoken")
 const AppError=require("../utils/AppError")
 const ERROR_CODES=require("../constants/errorCodes")
 const userRepository=require("../repositories/user.repository")
+const tokenBlackListRepository=require("../repositories/tokenBlackList.repository")
 
 const authMiddleware=async(req,res,next)=>{
     let token
@@ -9,6 +10,10 @@ const authMiddleware=async(req,res,next)=>{
         token=req.cookies.token
         if(!token){
             throw new AppError("Authentication Required",401,ERROR_CODES.UNAUTHORIZED)
+        }
+        const blackListedToken=await tokenBlackListRepository.findToken(token)
+        if(blackListedToken){
+            throw new AppError("Token is invalidated,please login again",401,ERROR_CODES.UNAUTHORIZED)
         }
         let decoded
         try{
@@ -38,6 +43,10 @@ const authSystemUserMiddleware=async(req,res,next)=>{
         token=req.cookies.token
         if(!token){
             throw new AppError("Authentication Required",401,ERROR_CODES.UNAUTHORIZED)
+        }
+        const blackListedToken=await tokenBlackListRepository.findToken(token)
+        if(blackListedToken){
+            throw new AppError("Token is invalidated,please login again",401,ERROR_CODES.UNAUTHORIZED)
         }
         let decoded
         try{

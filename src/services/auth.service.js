@@ -1,4 +1,5 @@
 const userRepository=require("../repositories/user.repository")
+const tokenBlacListRepository=require("../repositories/tokenBlackList.repository")
 const AppError=require("../utils/AppError")
 const ERROR_CODES=require("../constants/errorCodes")
 const jwt=require("jsonwebtoken")
@@ -10,7 +11,7 @@ const generateToken=(user)=>{
         {expiresIn:"3d"}
     )
 }
-//TODO:mail functionality
+
 //register
 const register=async({name,email,password})=>{
     //checking existing user
@@ -44,4 +45,18 @@ const login=async({email,password})=>{
     const token=generateToken(user)
     return {user,token}
 }
-module.exports={register,login}
+//logout
+const logout=async(token)=>{
+    if(!token){
+        throw new AppError("Authentication required",401,ERROR_CODES.UNAUTHORIZED)
+    }
+    //checking already blacklisted
+    const blackListedToken=await tokenBlacListRepository.findToken(token)
+    if(blackListedToken){
+        throw new AppError("Token already invalidated",400,ERROR_CODES.BAD_REQUEST)
+    }
+    //blacklist token
+    await tokenBlacListRepository.addToken(token)
+    return
+}
+module.exports={register,login,logout}

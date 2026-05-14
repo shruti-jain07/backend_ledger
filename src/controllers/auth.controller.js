@@ -1,8 +1,8 @@
-const userService=require("../services/auth.service")
+const authService=require("../services/auth.service")
 const {successResponse}=require("../utils/response")
 const register=async(req,res,next)=>{
     try{
-        const result=await userService.register(req.body)
+        const result=await authService.register(req.body)
         res.cookie("token",result.token,{
             httpOnly:true,
             secure:false
@@ -17,7 +17,7 @@ const register=async(req,res,next)=>{
 //login
 const login=async(req,res,next)=>{
     try{
-        const result=await userService.login(req.body)
+        const result=await authService.login(req.body)
         res.cookie("token",result.token,{
             httpOnly:true,
             secure:false
@@ -28,4 +28,15 @@ const login=async(req,res,next)=>{
         next(err)
     }
 }
-module.exports={register,login}
+//logout
+const logout=async(req,res,next)=>{
+    try{
+        const token=req.cookies.token
+        await authService.logout(token)
+        res.clearCookie("token")
+        return successResponse(res,"Logged out successfully")
+    }catch(err){
+        return next(err)
+    }
+}
+module.exports={register,login,logout}
