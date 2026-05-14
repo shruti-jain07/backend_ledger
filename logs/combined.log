@@ -418,3 +418,7 @@
 {"code":"CONFLICT","level":"error","message":"Transaction already processed","method":"POST","path":"/api/transactions/transfer","stack":"Error: Transaction already processed\n    at Object.transfer (D:\\backend_ledger\\src\\services\\transaction.service.js:108:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async transfer (D:\\backend_ledger\\src\\controllers\\transaction.controller.js:18:27)","timestamp":"2026-05-13T06:01:10.284Z"}
 {"level":"info","message":{"duration":"289ms","method":"POST","status":409,"url":"/api/transactions/transfer"},"timestamp":"2026-05-13T06:01:10.285Z"}
 {"level":"info","message":{"duration":"633ms","method":"POST","status":200,"url":"/api/transactions/transfer"},"timestamp":"2026-05-13T06:01:29.895Z"}
+{"host":"ac-svvaol3-shard-00-02.emzjbxs.mongodb.net","level":"info","message":"MongoDB connected","timestamp":"2026-05-14T14:59:11.134Z"}
+{"level":"info","message":{"duration":"575ms","method":"POST","status":200,"url":"/api/auth/login"},"timestamp":"2026-05-14T14:59:12.178Z"}
+{"level":"info","message":{"duration":"301ms","method":"GET","status":200,"url":"/api/transactions/history"},"timestamp":"2026-05-14T15:00:38.743Z"}
+{"level":"info","message":{"duration":"233ms","method":"GET","status":200,"url":"/api/transactions/history?page=1&limit=5"},"timestamp":"2026-05-14T15:01:15.532Z"}

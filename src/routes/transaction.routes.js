@@ -17,6 +17,10 @@ router.post("/transfer",authMiddleware,validate(transactionSchema),transactionCo
  * 
 */
 router.post("/system/initial-funds",authSystemUserMiddleware,transactionController.initialFundsTransfer)
-
+/**
+ * Get logged-in user transaction history
+ * GET /api/transactions/history
+ */
+router.get("/history",authMiddleware,transactionController.getTransactionHistory)
 
 module.exports=router
