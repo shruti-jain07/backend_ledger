@@ -219,3 +219,21 @@ base_url=http://localhost:3000
 ## Testing
 - Completed Postman testing for balance API
 - Tested unauthorized balance access validation
+
+## 14 may 2026
+# Transaction History API Update
+
+## API 
+router.get("/history",authMiddleware,transactionController.getTransactionHistory)
+
+## Completed
+
+- Added transaction history API
+- Added paginated transaction fetching
+- Added latest-first transaction sorting
+- Added transaction repository query for account-based history
+- Added authenticated transaction history access
+- Completed Postman testing for:
+  - transaction history
+  - pagination
+  - unauthorized access

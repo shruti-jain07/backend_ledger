@@ -3,6 +3,7 @@
  * update transaction status
  * find transaction by idempotency key
  * find transaction by id
+ * get transactions
  */
 const Transaction=require("../models/transaction.model")
 //create transaction
@@ -27,4 +28,16 @@ const findByIdempotencyKey=(idempotencyKey)=>{
 const findTransactionById=(transactionId)=>{
     return Transaction.findById({transactionId})
 }
-module.exports={createTransaction,updateTransactionStatus,findByIdempotencyKey,findTransactionById}
+//get transactions
+const getTransactionByAccounts=(accountIds,skip,limit)=>{
+    return Transaction.find({
+        $or:[
+                {fromAccount:{$in:accountIds}},
+                {toAccount:{$in:accountIds}},
+            ]
+    })
+    .sort({createdAt:-1})
+    .skip(skip)
+    .limit(limit)
+}
+module.exports={createTransaction,updateTransactionStatus,findByIdempotencyKey,findTransactionById,getTransactionByAccounts}

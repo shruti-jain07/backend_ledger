@@ -10,7 +10,9 @@
 *   transaction status updates
 *   idempotency
  */
-
+/**
+ * transactionHistory
+ */
 /************************ */
 const mongoose=require("mongoose")
 
@@ -192,5 +194,20 @@ const initialFundsTransfer=async(systemUserId,{
         idempotencyKey
     })
 }
-module.exports={transfer,initialFundsTransfer}
+
+//Transaction History
+const getTransactionHistory=async(userId,page=1,limit=10)=>{
+    //fetch accounts
+    const accounts=await accountRepository.getAccountByUser(userId)
+    //accountIds
+    const accountIds=accounts.map(
+        (account)=>account._id
+    )
+    //pagination
+    const skip=(page-1)*limit
+    //fetch transactions
+    const transactions=await transactionRepository.getTransactionByAccounts(accountIds,skip,limit)
+    return transactions
+}
+module.exports={transfer,initialFundsTransfer,getTransactionHistory}
 /************************ */

@@ -29,4 +29,15 @@ const initialFundsTransfer=async(req,res,next)=>{
         return next(err)
     }
 }
-module.exports={transfer,initialFundsTransfer}
+
+const getTransactionHistory=async(req,res,next)=>{
+    try{
+        const page=Number(req.query.page)||1
+        const limit=Number(req.query.limit)||10
+        const transactions=await transactionService.getTransactionHistory(req.user.id,page,limit)
+        return successResponse(res,"Transaction history fetched successfully",transactions)
+    }catch(err){
+        return next(err)
+    }
+}
+module.exports={transfer,initialFundsTransfer,getTransactionHistory}
