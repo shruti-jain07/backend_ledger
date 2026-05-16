@@ -1,4 +1,4 @@
-## Day 1- 24 April 2026 - Project Initialization
+## 24 April 2026 - Project Initialization
 
 ### Work Done
 - Initialized Node.js project using npm init
@@ -15,7 +15,7 @@
 - Using feature-based branching strategy
 - Each module will be developed in separate branches and merged into main after completion
 
-## Day 2 -25 april 2026- base Structure
+## 25 april 2026- base Structure
 
 ### What I did
 - Set up professional folder structure
@@ -44,7 +44,7 @@
 - using middleware based validation for reusability
 - Using structured JSON logs for better debugging and scalability
 - Centralizing all logs using Winston
-## Day 3 -27 april 2026- git synchronization
+## 27 april 2026- git synchronization
 ### Issue faced & how i resolved
 - merge conflict happened
 - in order to resolve this used git stash
@@ -56,8 +56,7 @@
 - Centralized error-handling & response format done
 - validation done
 - logging done
-## Day-4 28April 2026 
-## Postman Setup
+## 28 April 2026 - Postman Setup
 ### What I did
 - Created environment with base_url
 - Created API collection
@@ -71,10 +70,8 @@
 
 ### Outcome
 - Postman is ready for structured backend testing
-## Day 5 - 29 April 2026 to 02 May 2026
-base_url=http://localhost:3000
-## Auth / User Module
-
+## 29 April 2026 to 02 May 2026 - Auth / User Module
+{base_url}=http://localhost:3000
 ### What I did
 
 - Designed User schema with email, name, password
@@ -113,9 +110,7 @@ base_url=http://localhost:3000
 
 ---
 
-## Day 6 - 05 May 2026 to 06 May 2026
-
-## Account Module
+## 05 May 2026 to 06 May 2026 - Account Module
 
 ### What I did
 
@@ -159,8 +154,7 @@ base_url=http://localhost:3000
 - Secure user-based data handling implemented
 - Strong foundation ready for transaction/ledger module
 
-### 06 may-11 may 2026
-# Transaction System Module
+### 06 may-11 may 2026 - Transaction System Module
 
 ## Completed Features
 
@@ -209,8 +203,7 @@ base_url=http://localhost:3000
 - Balance derivation checks
 - Session rollback checks
 
-### 12may-13may 
-# Balance API 
+### 12may-13may - Balance API 
 ### API Completed
 - POST /api/account/:accountId/balance
 ## Feature
@@ -220,8 +213,7 @@ base_url=http://localhost:3000
 - Completed Postman testing for balance API
 - Tested unauthorized balance access validation
 
-## 14 may 2026
-# Transaction History API and JWT Logout System
+## 14 may 2026 - Transaction History API and JWT Logout System
 
 ## API 
 # Transaction history
@@ -249,3 +241,21 @@ router.post("/logout",authMiddleware,authController.logout)
   - logout
   - protected route access
   - invalidated token rejection
+
+### 16 may 2026 - Swagger UI Integration & API Documentation
+ ## Completed
+- Integrated Swagger UI
+- Configured OpenAPI documentation setup
+- Added Swagger configuration file
+- Documented Auth APIs, Account APIs, Transaction APIs
+- Added request body schemas, path parameter documentation, query parameter documentation, protected route descriptions, response documentation
+- Exported Postman collection
+## Key Learnings
+- Swagger/OpenAPI documentation structure
+- Route documentation using JSDoc comments
+- Professional backend API presentation
+## Impact
+- Improved API usability
+- Easier frontend integration
+- Interactive API testing support
+- Better project presentation and maintainability
