@@ -185,5 +185,4 @@ Import the Postman collection from:
 * Automated Testing
 
 ## Author
-
 Developed by Shruti Jain
