@@ -22,4 +22,7 @@ app.use("/api",routes)
 
 //error-handler
 app.use(errorHandler)
+app.get("/",(req,res)=>{
+    res.send("Ledger is running")
+})
 module.exports=app
