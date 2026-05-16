@@ -1,4 +1,8 @@
 const swaggerJsDoc=require("swagger-jsdoc")
+const BASE_URL =
+  process.env.NODE_ENV === "production"
+    ? "https://backend-ledger-qts7.onrender.com/api"
+    : "http://localhost:3000/api";
 
 const options={
     definition:{
@@ -11,7 +15,7 @@ const options={
         
         servers:[
             {
-                url:"http://localhost:3000/api"
+                url:BASE_URL
             }
         ]
     },
