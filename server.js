@@ -3,7 +3,7 @@ const app=require("./src/app")
 const connectDB=require("./src/config/db")
 const {successResponse}=require("./src/utils/response");
 connectDB()
-const PORT=3000
+const PORT=process.env.PORT||3000
 app.get("/health", (req, res) => {
   return successResponse(
     res,
